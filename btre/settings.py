@@ -132,3 +132,7 @@ STATICFILES_DIRS = [
 if DEBUG:
     import mimetypes
     mimetypes.add_type("application/javascript", ".js", True)
+
+# Media folder settings
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
