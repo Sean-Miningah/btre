@@ -5,7 +5,7 @@
                 <button type="button" class="close" data-dimiss="alert"> <span aria-hidden="True">&times;</span></button>
                 <strong>
                     {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
-                        Error
+                        Danger
                     {% else %}
                         {{ message.tags|title  }}
                     {% endif %}
